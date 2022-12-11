@@ -1,0 +1,128 @@
+/* UNIVERSAL SELECTOR */
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(80, 124, 128);
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* ANIMATIONS */
+@keyframes reveal {
+    from {
+        font-size: 0rem;
+        color: rgb(209, 202, 202);
+    }
+
+    to {
+        font-size: 0.9rem;
+        color: white;
+    }
+}
+
+/* ELEMENT SELECTORS */
+h1 {
+    margin: 5% 0px;
+    text-align: center;
+    font-family: "Prata", serif;
+}
+
+button {
+    background-color: #fff8c2;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+button,
+textarea {
+    display: block;
+    margin-bottom: 30px;
+    width: 75%;
+    height: 100%;
+    padding: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+code {
+    display: none;
+    background: black;
+    margin-bottom: 30px;
+    padding: 25px;
+    color: white;
+    height: 75%;
+    margin-right: 0px;
+    font-size: 0.9rem;
+    font-family: "Source Code Pro", "Inconsolata", monospace;
+    animation: 0.4s reveal;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    background-color: white;
+    border: 1px solid darkblue;
+}
+
+/* ID SELECTORS */
+#reset {
+    background-color: #1d1c1c;
+    border: 1px solid rgb(65, 104, 65);
+    color: white;
+}
+
+/* CLASS SELECTORS */
+.event-listeners {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.clicked {
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+/* HOVER RULES */
+button:not(:last-of-type):hover {
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.clicked:hover {
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+#reset:hover {
+    background-color: #b398df;
+    box-shadow: 0px 0px 5px 0px black;
+    font-size: 1.25rem;
+    z-index: 100;
+    color: white;
+}
+
+textarea:hover {
+    box-shadow: 0px 0px 5px black;
+}
